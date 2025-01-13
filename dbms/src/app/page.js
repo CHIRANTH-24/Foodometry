@@ -1,9 +1,15 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+export default function Home({ onNext }) {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      
+    <div className="flex flex-col items-center justify-center h-screen text-center p-4">
+      <h1 className="text-3xl font-bold mb-4">Welcome to RecipeMaster!</h1>
+      <p className="mb-6">Find recipes tailored to your preferences.</p>
+      <Link href="/onboarding">
+        <Button onClick={onNext}>Get Started</Button>
+      </Link>
     </div>
   );
 }
