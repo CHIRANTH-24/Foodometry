@@ -2,9 +2,9 @@
 import { useUser } from "@clerk/nextjs";
 import React, { useEffect } from "react";
 
-import {db} from "../../configs/db";
 import { users } from "../../configs/schema";
 import { eq } from "drizzle-orm";
+import db from "../../configs/db";
 
 function Provider({ children }) {
   const { user } = useUser();
