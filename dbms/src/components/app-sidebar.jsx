@@ -20,12 +20,12 @@ import { UserButton } from "@clerk/nextjs";
 const data = {
   navMain: [
     {
-      title: "Dashboard",
-      url: "",
+      title: "View all Recipe",
+      url:"/dashboard/view",
     },
     {
-      title: "Get Recipe",
-      url: "#",
+      title: "Create Recipe",
+      url: "/dashboard/create",
     },
     
   ],
