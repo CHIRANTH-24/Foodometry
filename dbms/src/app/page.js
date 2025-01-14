@@ -7,7 +7,7 @@ export default function Home({ onNext }) {
     <div className="flex flex-col items-center justify-center h-screen text-center p-4">
       <h1 className="text-3xl font-bold mb-4">Welcome to RecipeMaster!</h1>
       <p className="mb-6">Find recipes tailored to your preferences.</p>
-      <Link href="/onboarding">
+      <Link href="/dashboard/create">
         <Button onClick={onNext}>Get Started</Button>
       </Link>
     </div>
