@@ -110,7 +110,7 @@ import { Button } from '@/components/ui/button';
 import TopicInput from './_components/TopicInput';
 import { v4 as uuidv4 } from "uuid";
 import axios from 'axios';
-import { useUser } from "@clerk/nextjs";
+import { UserButton, useUser } from "@clerk/nextjs";
 import { useRouter } from 'next/navigation';
 // import { toast } from 'sonner';
 //import { TypewriterEffectSmooth } from '@/components/ui/type-writereffect';
@@ -160,7 +160,7 @@ const Create = () => {
                 {/* <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-indigo-400 to-pink-400 dark:from-indigo-300 dark:to-pink-300 text-transparent bg-clip-text">Hello! {user?.fullName} </h1>
                 <h6 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-indigo-400 to-pink-400 dark:from-indigo-300 dark:to-pink-300 text-transparent bg-clip-text"><TypewriterEffectSmooth words={words} /></h6> */}
                 <div className='mt-2'>
-
+                    <UserButton/>
                     <SelectOption selectedStudyType={(value) => handleUserInput('studyType', value)} />
                     
                     <div className='mt-4'>
