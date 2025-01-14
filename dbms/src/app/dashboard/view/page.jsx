@@ -1,9 +1,12 @@
+import RecipeList from '@/components/RecipeList'
 import React from 'react'
 
 const page = () => {
   return (
+
     <div>
-      View all
+      <h1>Here are your recipes </h1>
+      <RecipeList/>
     </div>
   )
 }
