@@ -41,7 +41,7 @@ const RecipeCard = ({ recipe, index }) => {
         </div>
       </CardContent>
       <CardFooter >
-        <Link href={'/recipe/' + recipe?.recipeId} className="w-full">
+        <Link href={'recipe/' + recipe?.recipeId} className="w-full">
         <Button  className="w-full" variant="default">View Recipe</Button>
         </Link>
       </CardFooter>
