@@ -23,3 +23,4 @@ export async function GET(req) {
     .where(eq(RECIPE_TABLE?.recipeId, recipeId));
   return NextResponse.json({ result: course[0] });
 }
+
